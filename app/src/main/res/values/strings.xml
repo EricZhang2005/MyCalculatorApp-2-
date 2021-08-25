@@ -6,5 +6,7 @@
     <string name="num2EditText">num2</string>
     <string name="addButton">ADD</string>
     <string name="subtButton">SUBTRACT</string>
+    <string name="multButton">MULTIPLY</string>
+    <string name="divButton">DIVIDE</string>
 
 </resources>
