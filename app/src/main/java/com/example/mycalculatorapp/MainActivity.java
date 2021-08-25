@@ -3,9 +3,11 @@ package com.example.mycalculatorapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Displaying Toast with Hello Javatpoint message
+        Toast.makeText(getApplicationContext(),"Please enter values for BOTH nums",Toast.LENGTH_SHORT).show();
     }
 
     public void add(View v) {
@@ -30,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         // set the text for the answer
         ansTextView.setText("Answer: " + sum);
+
+
     }
 
     public void subt(View v){
@@ -38,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         EditText num2EditText = (EditText) findViewById(R.id.num2EditText);
         TextView ansTextView = (TextView) findViewById(R.id.ansTextView);
 
-        // get the values from the EditText boxes and convert tßhem to int data types
+        // get the values from the EditText boxes and convert them to int data types
         int num1 = Integer.parseInt(num1EditText.getText().toString());
         int num2 = Integer.parseInt(num2EditText.getText().toString());
 

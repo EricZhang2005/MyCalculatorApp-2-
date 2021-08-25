@@ -1,3 +1,10 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <string name="app_name">Eric Calculator</string>
+    <string name="ansTextView">Answer:</string>
+    <string name="titleTextView">Basic Calculator</string>
+    <string name="num1EditText">num1</string>
+    <string name="num2EditText">num2</string>
+    <string name="addButton">ADD</string>
+    <string name="subtButton">SUBTRACT</string>
+
 </resources>
