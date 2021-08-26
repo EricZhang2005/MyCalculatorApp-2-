@@ -127,9 +127,10 @@ public class MainActivity extends AppCompatActivity {
 
         // set the text for the answer
         ansTextView.setText("Answer: " + sum);
-
-
     }
+
+
+
 
     public void subt(View v){
         // Get reference to all elements on app screen
@@ -147,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
         // set the text for the answer
         ansTextView.setText("Answer: " + diff);
     }
+
 
     public void mult(View v) {
         // Get references to all elements on app screen
