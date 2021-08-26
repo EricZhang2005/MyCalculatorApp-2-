@@ -87,14 +87,14 @@
         app:layout_constraintBottom_toTopOf="@+id/multButton"
         app:layout_constraintEnd_toStartOf="@+id/subtButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num2EditText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/subtButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="375dp"
+        android:layout_marginTop="300dp"
         android:layout_marginEnd="125dp"
         android:onClick="subt"
         android:text="@string/subtButton"
@@ -123,9 +123,9 @@
         android:layout_width="110dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="110dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="190dp"
         android:onClick="divide"
         android:text="@string/divButton"
         app:layout_constraintBottom_toTopOf="@+id/ansTextView"

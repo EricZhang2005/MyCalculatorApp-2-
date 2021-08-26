@@ -9,6 +9,7 @@
     <color name="white">#FFFFFF</color>
     <color name="ColorText">#1F51FF</color>
 
+    // code provided by https://www.geeksforgeeks.org/how-to-implement-dark-night-mode-in-android-app/
     <!-- for Normal/Light Mode -->
     <color name = "backgroundColor">#FCFCFC</color>
     <color name="textColor">#000000</color>
