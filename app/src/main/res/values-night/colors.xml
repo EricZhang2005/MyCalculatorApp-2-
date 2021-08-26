@@ -9,7 +9,7 @@
     <color name="white">#FFFFFF</color>
     <color name="ColorText">#1F51FF</color>
 
-    <!-- for Normal/Light Mode -->
-    <color name = "backgroundColor">#FCFCFC</color>
-    <color name="textColor">#000000</color>
+    <!-- for Night/Dark Mode -->
+    <color name = "backgroundColor">#212121</color>
+    <color name="textColor">#FFFFFF</color>
 </resources>

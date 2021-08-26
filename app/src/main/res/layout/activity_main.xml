@@ -4,25 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:onClick="exponential"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/ansTextView"
         android:layout_width="149dp"
         android:layout_height="31dp"
-        android:layout_marginStart="167dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="167dp"
-        android:layout_marginBottom="215dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="6dp"
         android:text="@string/ansTextView"
         android:textColor="#008b8b "
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/toastPopUp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtButton"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/expButton" />
 
     <TextView
         android:id="@+id/titleTextView"
@@ -48,7 +48,6 @@
         android:layout_width="56dp"
         android:layout_height="48dp"
         android:layout_marginStart="177dp"
-        android:layout_marginTop="15dp"
         android:layout_marginEnd="178dp"
         android:layout_marginBottom="14dp"
         android:ems="10"
@@ -56,6 +55,7 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/num2EditText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
@@ -64,8 +64,7 @@
         android:layout_width="56dp"
         android:layout_height="48dp"
         android:layout_marginStart="177dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="178dp"
+        android:layout_marginEnd="195dp"
         android:layout_marginBottom="14dp"
         android:ems="10"
         android:hint="@string/num2EditText"
@@ -79,9 +78,10 @@
         android:id="@+id/addButton"
         android:layout_width="105dp"
         android:layout_height="48dp"
-        android:layout_marginStart="175dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
         android:onClick="add"
         android:text="@string/addButton"
         app:layout_constraintBottom_toTopOf="@+id/multButton"
@@ -93,27 +93,27 @@
         android:id="@+id/subtButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="375dp"
+        android:layout_marginEnd="110dp"
         android:onClick="subt"
         android:text="@string/subtButton"
         app:layout_constraintBottom_toTopOf="@+id/divButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/addButton"
-        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/multButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginBottom="5dp"
         android:onClick="mult"
         android:text="@string/multButton"
-        app:layout_constraintBottom_toTopOf="@+id/ansTextView"
+        app:layout_constraintBottom_toTopOf="@+id/expButton"
         app:layout_constraintEnd_toStartOf="@+id/divButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addButton" />
@@ -123,30 +123,58 @@
         android:layout_width="110dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="110dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="200dp"
         android:onClick="divide"
         android:text="@string/divButton"
         app:layout_constraintBottom_toTopOf="@+id/ansTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/multButton"
-        app:layout_constraintTop_toBottomOf="@+id/subtButton"
-        app:layout_constraintVertical_bias="0.846" />
+        app:layout_constraintTop_toBottomOf="@+id/subtButton" />
 
     <TextView
         android:id="@+id/toastPopUp"
         android:layout_width="257dp"
         android:layout_height="74dp"
-        android:layout_marginStart="77dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginStart="100dp"
         android:layout_marginEnd="77dp"
         android:layout_marginBottom="85dp"
         android:text="@string/toastPopUp"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ansTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/ansTextView"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <Button
+        android:id="@+id/btnToggleDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="46dp"
+        android:text="@string/darkMode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toastPopUp" />
+
+    <Button
+        android:id="@+id/expButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="9dp"
+        android:onClick="exponential"
+        android:text="@string/exp"
+        app:layout_constraintBottom_toTopOf="@+id/ansTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

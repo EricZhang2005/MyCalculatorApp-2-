@@ -10,7 +10,5 @@
     <string name="divButton">DIVIDE</string>
     <string name = "toastPopUp">Enter values for BOTH nums otherwise app will crash</string>
     <string name = "darkMode">Enable Dark Mode</string>
-    <string name="lightMode">Enable Light Mode</string>
-    <string name="exp">EXPONENTIAL</string>
 
 </resources>
