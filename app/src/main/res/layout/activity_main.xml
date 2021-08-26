@@ -62,7 +62,7 @@
     <EditText
         android:id="@+id/num2EditText"
         android:layout_width="56dp"
-        android:layout_height="42dp"
+        android:layout_height="48dp"
         android:layout_marginStart="177dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="178dp"
@@ -78,10 +78,9 @@
     <Button
         android:id="@+id/addButton"
         android:layout_width="105dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="32dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="12dp"
         android:onClick="add"
         android:text="@string/addButton"
@@ -94,24 +93,23 @@
         android:id="@+id/subtButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="82dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="2dp"
         android:onClick="subt"
         android:text="@string/subtButton"
         app:layout_constraintBottom_toTopOf="@+id/divButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/addButton"
-        app:layout_constraintTop_toBottomOf="@+id/num2EditText" />
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
     <Button
         android:id="@+id/multButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="33dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="9dp"
         android:onClick="mult"
         android:text="@string/multButton"
@@ -123,16 +121,32 @@
     <Button
         android:id="@+id/divButton"
         android:layout_width="110dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="82dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="110dp"
         android:layout_marginBottom="15dp"
         android:onClick="divide"
         android:text="@string/divButton"
         app:layout_constraintBottom_toTopOf="@+id/ansTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/multButton"
-        app:layout_constraintTop_toBottomOf="@+id/subtButton" />
+        app:layout_constraintTop_toBottomOf="@+id/subtButton"
+        app:layout_constraintVertical_bias="0.846" />
+
+    <TextView
+        android:id="@+id/toastPopUp"
+        android:layout_width="257dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="85dp"
+        android:text="@string/toastPopUp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

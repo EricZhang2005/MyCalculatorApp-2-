@@ -8,5 +8,6 @@
     <string name="subtButton">SUBTRACT</string>
     <string name="multButton">MULTIPLY</string>
     <string name="divButton">DIVIDE</string>
+    <string name = "toastPopUp">Enter values for BOTH nums otherwise app will crash</string>
 
 </resources>
