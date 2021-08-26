@@ -135,10 +135,10 @@
 
     <TextView
         android:id="@+id/toastPopUp"
-        android:layout_width="257dp"
-        android:layout_height="74dp"
+        android:layout_width="302dp"
+        android:layout_height="53dp"
         android:layout_marginStart="100dp"
-        android:layout_marginEnd="77dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="85dp"
         android:text="@string/toastPopUp"
         android:textSize="20sp"

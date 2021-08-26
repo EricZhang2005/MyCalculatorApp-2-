@@ -4,11 +4,11 @@
     <string name="titleTextView">Basic Calculator</string>
     <string name="num1EditText">num1</string>
     <string name="num2EditText">num2</string>
-    <string name="addButton">SUBTRACT</string>
-    <string name="subtButton">ADD</string>
+    <string name="addButton">ADD</string>
+    <string name="subtButton">SUBTRACT</string>
     <string name="multButton">MULTIPLY</string>
     <string name="divButton">DIVIDE</string>
-    <string name = "toastPopUp">Enter values for BOTH nums otherwise app will crash</string>
+    <string name = "toastPopUp">Enter values for BOTH numbers otherwise app will crash</string>
     <string name = "darkMode">Enable Dark Mode</string>
     <string name="lightMode">Enable Light Mode</string>
     <string name="exp">EXPONENTIAL</string>
